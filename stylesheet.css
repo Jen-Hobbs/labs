@@ -1,0 +1,42 @@
+table{
+    border-collapse: collapse;
+    margin: auto;
+    max-width: 300px;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-top: 0px;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+tr{
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+}
+td{
+    padding: 10px;
+    border-collapse: collapse;
+}
+tr:hover{
+    background-color: #ebebe0;
+}
+input{
+    width: 350px;
+}
+.portrait{
+    border-radius:5%;
+}
+.name{
+    font-style: bold;
+}
+#ArtistForm{
+    margin: auto;
+    max-width:350px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
