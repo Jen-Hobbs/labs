@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Jennifer Hobbs Lab 2
+    </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="lab3.js"></script>
+</head>
+
+<body>
+    <div id="ArtistForm">
+        <h1>Artist Directory</h1>
+        <form>
+            <input type="text" name="Artist Directory">
+            <input type="button" value="Add Artist" onclick="createArtist()">
+        </form>
+    </div>
+    <div id="AddArtist" hidden>
+        <form id="formAdd">
+            <input type="text"  id="formName" value="Artist Name">
+            <input type="text" id="formAbout" value="About Artist">
+            <input type="text" value="image url">
+            <input type="submit" value="Add" onclick="addArtist()">
+        </form>
+    </div>
+    <div class="border">
+        <img class="portrait" src="https://randomuser.me/api/portraits/med/men/1.jpg" alt="pic0">
+        <div class="content">
+            <h2 class="Name">Barot Bellingham</h2>
+            <p class="description">Royal Academy of Painting and Sculpture</p>
+        </div>
+        <button type="button" id="myBtn" onclick="deleteArtist()">Delete</button>
+    </div>
+    <!-- <table>
+        <tr>
+            <td><img class="portrait" src="https://randomuser.me/api/portraits/med/men/1.jpg" alt="pic0"></td>
+            <td class = "description">
+                <h2 class="Name">Barot Bellingham</h2>
+                </break> Royal Academy of Painting and Sculpture
+            </td>
+            <td>
+                <button type="button" id="myBtn" onclick="deleteArtist()">Delete</button>
+            </td>
+        </tr> -->
+        <!-- <tr>
+            <td><img class="portrait" src="https://randomuser.me/api/portraits/med/men/2.jpg" alt="pic1"></td>
+            <td>
+                <h2>Jonathan G. Ferrar II</h2>
+                </break> Artist to Watch in 2012
+            </td>
+        </tr>
+        <tr>
+            <td><img class="portrait" src="https://randomuser.me/api/portraits/med/women/1.jpg " alt="pic2"></td>
+            <td>
+                <h2>Hillary Hewitt Goldwynn-Post</h2>
+                </break> New York University
+            </td>
+        </tr>
+        <tr>
+            <td><img class="portrait" src="https://randomuser.me/api/portraits/med/men/3.jpg" alt="pic3"></td>
+            <td>
+                <h2>Hassum Harrod</h2>
+                </break> Art College in New Dehli
+            </td>
+        </tr>
+        <tr>
+            <td><img class="portrait" src="https://randomuser.me/api/portraits/med/women/2.jpg " alt="pic4"></td>
+            <td>
+                <h2>Jennifer Jerome</h2>
+                </break> Dancer at ABT
+            </td>
+        </tr> -->
+    <!-- </table> -->
+</body>
+
+</html>

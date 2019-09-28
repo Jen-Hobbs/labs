@@ -40,3 +40,8 @@ input{
     border: 1px solid lightgray;
     padding: 20px;
 }
+#formAdd{
+    margin: auto;
+    max-width:350px;
+    padding: 20px;
+}
