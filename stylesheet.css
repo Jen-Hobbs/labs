@@ -1,7 +1,18 @@
-table{
-    border-collapse: collapse;
+.border{
     margin: auto;
-    max-width: 300px;
+    max-width: 600px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    overflow: auto;
+}
+input{
+    border-radius:2%;
+    padding: 5px;
+    margin: 0px;
+    width: 450px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
 }
 h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,34 +25,54 @@ h2{
     margin-top: 3px;
     margin-bottom: 3px;
 }
-tr{
-    border-collapse: collapse;
-    border: 1px solid lightgray;
-}
-td{
-    padding: 10px;
-    border-collapse: collapse;
-}
-tr:hover{
-    background-color: #ebebe0;
-}
-input{
-    width: 350px;
+.create{
+    margin-left: 5px;
 }
 .portrait{
     border-radius:5%;
+    float: left;
+    padding-right: 10px;
 }
-.name{
+.Name{
     font-style: bold;
+}
+.content{
+    max-width: 450px;
+    margin: 0px;
+}
+.myBtn{
+    background-color: red;
+    color:white;
+    border-radius: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 18px;
+    font-family: Arial, Helvetica, sans-serif;  
+    border: none;
+    margin-right: 30px;
+    float:right;
+}
+.description{
+    margin-top: 0px;
+}
+#formAdd{
+    margin:auto;
+    max-width:454px;
 }
 #ArtistForm{
     margin: auto;
-    max-width:350px;
+    max-width:600px;
     border: 1px solid lightgray;
     padding: 20px;
 }
-#formAdd{
-    margin: auto;
-    max-width:350px;
-    padding: 20px;
+
+#searchArtist{
+    float:left;
+    
+}
+#addArtistButton{
+    width: 100px;
+    margin-left: 175px;
 }
