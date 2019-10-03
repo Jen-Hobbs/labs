@@ -42,11 +42,10 @@ function addArtist(){
     var nameButton = document.createTextNode("Delete");
     portrait.src = imgInfo;
     myBtn.onclick = function(){
-      console.log(this.parentNode.);
+      console.log(this.parentNode);
       var list = document.getElementById("showArtists");
-      console.log(list.childNodes);
       if (list.hasChildNodes()) {
-        list.removeChild(list.childNodes[this.parentNode]);
+        list.removeChild(this.parentNode);
       }
     };
     myBtn.append(nameButton);
@@ -66,13 +65,4 @@ function addArtist(){
     document.getElementById("showArtists").appendChild(border);
 
 }
-
-function deleteArtist(){
-  console.log("hello world");
-  var list = document.getElementById("showArtists");
-  console.log(list.childNodes);
-  if (list.hasChildNodes()) {
-    list.removeChild(list.childNodes[0]);
-  }
-  // https://randomuser.me/api/portraits/med/men/1.jpg
-}
+// https://randomuser.me/api/portraits/med/men/1.jpg
