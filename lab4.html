@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Jennifer Hobbs Lab 3
+    </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="lab4.js"></script>
+</head>
+
+<body>
+    <div id="ArtistForm">
+        <h1>Artist Directory</h1>
+        <button type="button" class="create" value="Add Artist" onclick="createArtist()">Add Artist</button>
+        <button type="button" class="create" value="search" onclick="search()">Search</button>
+        <form id="searchArtist">
+            <input type="text" name="Artist Directory">
+            <!-- <input type="button" class="create" value="search" onclick="search()"> -->
+        </form>
+    </div>
+    <div id="AddArtist" hidden>
+        <form id="formAdd">
+            <input type="text"  id="formName" value="Artist Name" maxlength="40">
+            <input type="text" id="formAbout" value="About Artist" maxlength="40">
+            <input type="text" id="formImg" value="image url">
+            <input type="button" value="Add" id="addArtistButton" onclick="addArtist()">
+        </form>
+    </div>
+    <div id="showArtists"></div>
+ 
+</body>
+
+</html>

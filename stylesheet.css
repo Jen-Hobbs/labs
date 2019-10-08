@@ -70,6 +70,7 @@ h2{
 
 #searchArtist{
     float:left;
+    max-width: 300px;
     
 }
 #addArtistButton{
