@@ -1,0 +1,29 @@
+    <div id="ArtistForm">
+        <h1>Artist Directory</h1>
+        <form action="peoples/startSearch" method="POST">
+            <button type="button" class="create" value="Add Artist" onclick="createArtist()">Add Artist</button>
+            <button type="submit" class="create" value="search">Search</button>
+            <div id="searchArtist">
+                <input type="text" name="searchName">
+                <!-- <input type="button" class="create" value="search" onclick="search()"> -->
+            </div>
+        </form>
+    </div>
+    <div id="AddArtist" hidden>
+        <form id="formAdd" action="/peoples/add" method="POST">
+            <input type="text"  id="formName" value="Artist Name" maxlength="40" name="name">
+            <input type="text" id="formAbout" value="About Artist" maxlength="40" name="about">
+            <input type="text" id="formImg" value="image url" name="imageURL">
+            <input type="submit" value="Add" id="addArtistButton">
+        </form>
+    </div>
+    {{#each eachPerson}}
+    <div class="border">
+        <img class="portrait" src='{{this.url}}'>
+        <div class="content">
+            <h2 class="Name">{{this.name}}</h2>
+            <p class="description">{{this.about}}</p>
+        </div>
+        <button type="button" class="myBtn">Delete</button>
+    </div>
+    {{/each}}
