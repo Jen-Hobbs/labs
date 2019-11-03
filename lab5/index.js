@@ -24,8 +24,6 @@ app.engine(
   let playerRoutes = require('./routes/peoples');
   app.use(express.static(path.join(__dirname,'public')));
 
-  app.get('/', function (req,res) {
-    res.render('home', { pageTitle: 'Lab 5'});
-    });
     app.use(playerRoutes);
-  app.listen(3000, () => console.log('Server ready'))
+    let port = process.env.PORT || 3000;
+  app.listen(port, () => console.log('Server ready'))

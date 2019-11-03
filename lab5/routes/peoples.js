@@ -27,5 +27,11 @@ router.post('/peoples/add', (req, res) => {
    mod.add(pOject);
    res.redirect(301, '/peoples');
 });
-
+router.post('/peoples/remove', (req, res) =>
+{
+    let id = req.body.id;
+    console.log("remove" + id);
+    mod.remove(id);
+    res.redirect(301, '/peoples');
+});
 module.exports = router;

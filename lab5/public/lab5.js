@@ -16,6 +16,7 @@ function createArtist(){
     formPic.value="image url";
   }
 }
+
 // }
 // var myStorage = window.localStorage;
 

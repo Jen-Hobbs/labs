@@ -6,6 +6,9 @@ function addPeople(e) {
 }
 
 function getAllPeople() {
+    for(var x = 0; x < p.length; x++){
+        p[x].id = x;
+    }
     if(p.length > 0){
         if(search != null && search != ''){
             let temp = [];
@@ -33,10 +36,14 @@ function searchPeople(name){
 function getSearch(){
     search;
 }
+function remove(id){
+    p.splice(id, 1);
+}
 module.exports = {
     add : addPeople,
     getall : getAllPeople,
     getpeople: getPeople,
     searchPeople: searchPeople,
-    getSearch: getSearch 
+    getSearch: getSearch,
+    remove: remove 
 }

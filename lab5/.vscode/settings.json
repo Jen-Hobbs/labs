@@ -1,0 +1,9 @@
+{
+    "appService.deploySubpath": "",
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/a96eda7e-e79c-460a-80b4-9f967c3dac4b/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/JHobbs"
+}

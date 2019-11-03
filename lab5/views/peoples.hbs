@@ -24,6 +24,8 @@
             <h2 class="Name">{{this.name}}</h2>
             <p class="description">{{this.about}}</p>
         </div>
-        <button type="button" class="myBtn">Delete</button>
+        <form action="/peoples/remove" method="POST">
+            <button type="submit" class="myBtn" name= "id" value = "{{this.id}}">Delete</button>
+        </form>
     </div>
     {{/each}}
